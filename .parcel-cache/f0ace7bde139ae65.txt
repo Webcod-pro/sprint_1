@@ -1,0 +1,14 @@
+13
+55C:\Users\dmitry\Desktop\practicum sprint 1\package.json133126443903329734 0
+60C:\Users\dmitry\Desktop\practicum sprint 1\package-lock.json133125626639665047 0
+47C:\Users\dmitry\Desktop\practicum sprint 1\dist133126444669922876 1
+54C:\Users\dmitry\Desktop\practicum sprint 1\src\modules133126444112416535 1
+53C:\Users\dmitry\Desktop\practicum sprint 1\index.html133126444291096887 0
+46C:\Users\dmitry\Desktop\practicum sprint 1\src133125633854621002 1
+55C:\Users\dmitry\Desktop\practicum sprint 1\src\index.js133126443839011872 0
+61C:\Users\dmitry\Desktop\practicum sprint 1\src\modules\sum.js133125635000240417 0
+65C:\Users\dmitry\Desktop\practicum sprint 1\dist\index.975ef6c8.js133126444669791044 0
+69C:\Users\dmitry\Desktop\practicum sprint 1\dist\index.975ef6c8.js.map133126444669851033 0
+58C:\Users\dmitry\Desktop\practicum sprint 1\dist\index.html133126444669912871 0
+78C:\Users\dmitry\Desktop\practicum sprint 1\dist\practicum sprint 1.3464ddca.js133126443905602815 0
+82C:\Users\dmitry\Desktop\practicum sprint 1\dist\practicum sprint 1.3464ddca.js.map133126443905642908 0
