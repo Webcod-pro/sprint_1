@@ -1,11 +1,31 @@
 ---
-id: "root" 
+profile-link: "#"
 ---
 <html>
     <head>
-        <script src="src/index.js" type="module"></script>
+    	<link rel="stylesheet" href="css/style.less" />
     </head>
     <body>
-        <div id="{{ id }}"></div>
+        <div class="popup-wrapper">
+	        <div class="popup" id="pp_enter">
+	        	<div class="popup__container">
+	        		<div class="popup__title">Вход</div>
+	        		<form class="pp-form">
+	        			<div class="pp-form__field">
+	        				<input type="text" placeholder="Логин" name="login">
+	        				<div class="pp-form__name">Логин</div>
+	        			</div>
+	        			<div class="pp-form__field">
+	        				<input type="password" placeholder="Пароль" name="password">
+	        				<div class="pp-form__name">Пароль</div>
+	        			</div>
+	        			<div class="pp-form__footer">
+		        			<button type="button" onclick="window.location.href='chat.html'" id="but-login" class="but but_blue">Авторизоваться</button>
+		        			<a href="registration.html" class="pp-link">Нет аккаунта?</a>
+	        			</div>
+	        		</form>
+	        	</div>
+	        </div>
+	    </div>
     </body>
-</html>
+</html> 

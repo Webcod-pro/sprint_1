@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.hbs",
-    "build": "parcel build index.hbs"
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "@parcel/transformer-less": "^2.8.0",
     "parcel": "^2.0.1"
   }
 }
- 
