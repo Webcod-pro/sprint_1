@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Настройки профиля</title>
+    <link rel="stylesheet" href="css/style.less" />
+</head>
+<body>
+	<div class="back"></div>
+
+	<section class="profile profile_edit">
+		<div class="profile__top">
+			<div class="profile__avatar">
+				<img src="images/blank.png" alt="">
+			</div>
+			<div class="profile__name">Иван</div>
+		</div>
+		<ul class="user-info">
+			<li class="user-info__item">
+				<div class="user-info__param">Старый пароль</div>
+				<input class="user-info__value" type="password" value="jasid123das219">
+			</li>
+		</ul>
+		<ul class="user-info">
+			<li class="user-info__item">
+				<div class="user-info__param">Новый пароль</div>
+				<input class="user-info__value" type="password" value="" placeholder="•••••••••••">
+			</li>
+			<li class="user-info__item">
+				<div class="user-info__param">Повторите новый пароль</div>
+				<input class="user-info__value" type="password" value="" placeholder="•••••••••••">
+			</li>
+		</ul>
+		<ul class="profile__otps">
+			<li><a class="but but_blue" href="settings.hbs">Сохранить</a></li>
+		</ul>
+	</section>
+</body>
+</html>

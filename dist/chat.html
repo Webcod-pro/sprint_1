@@ -1,15 +1,15 @@
----
-profile-link: "#"
----
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Чат</title>
     	<link rel="stylesheet" href="/index.9a2e5b7a.css">
     </head>
     <body>
         <div class="chat">
         	<aside class="chat__aside">
         		<header class="chat__aside-header">
-        			<div class="chat__profile-link"><a href="#">Профиль</a></div>
+        			<div class="chat__profile-link"><a href="/settings.html">Профиль</a></div>
         			<div class="chat__search">
         				<form action="">
         					<input type="search" placeholder="Поиск">
@@ -163,9 +163,10 @@ profile-link: "#"
     			</ul>
         	</aside>
         	<section class="chat__main">
+                <div class="message__empty hidden">Выберите чат чтобы отправить сообщение</div>
         		<header class="header">
-        			<div class="profile">
-        				<a href="{{profile-link}}">
+        			<div class="chat__profile">
+        				<a href="#">
 	        				<div class="chat__avatar chat__avatar_small">
 	    						<img src="/blank.28461cc7.png" alt="">
 	        				</div>
@@ -174,13 +175,13 @@ profile-link: "#"
         			</div>
         			<div class="opts">
         				<a href="#" class="opts__but"></a>
-        				<ul class="opts__list hidden">
-        					<li class="opts__item"></li>
+        				<ul class="opts__list">
+        					<li class="opts__item"><a href="#">Добавить пользователя</a></li>
+                            <li class="opts__item"><a href="#">Удалить пользователя</a></li>
         				</ul>
         			</div>
         		</header>
         		<main class="message">
-        			<div class="message__empty">Выберите чат чтобы отправить сообщение</div>
         			<div class="day">
         				<div class="day__date">17 июня</div>
         				<div class="message__item message__item_from">
@@ -265,11 +266,23 @@ profile-link: "#"
         		<footer class="send-message">
         			<div class="send-message__attach"></div>
         			<div class="send-message__input">
-        				<input type="text" placeholder="Сообщение">
+        				<input type="text" placeholder="Сообщение" name="message">
         			</div>
         			<button type="button" class="send-message__but"></button>
         		</footer>
         	</section>
         </div>
-    <script src="/chat.2383b4e5.js"></script></body>
+        <script>/* example */ const chatItems = document.querySelectorAll(".chat-item");
+chatItems.forEach(function(item) {
+    item.addEventListener("click", function() {
+        document.querySelector(".message__empty").classList.add("hidden");
+        chatItems.forEach(function(item) {
+            item.classList.remove("active");
+        });
+        this.classList.add("active");
+    });
+}); /* END example */ 
+
+</script>
+    <script src="/chat.92554c0e.js"></script></body>
 </html> 

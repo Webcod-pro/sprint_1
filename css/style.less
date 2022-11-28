@@ -4,6 +4,7 @@
 @middlegrey: #EAEAEA;
 @lightgrey: #EFEFEF;
 @dark: #1E1E1E;
+@red: #FF0000;
 
 
 /*=================== Стандартизация стилей ===================*/
@@ -176,7 +177,7 @@ body{
 }
 a{
     background-color: transparent;
-    color: currentColor;
+	color: @blue;
     text-decoration: none;
     transition: color .2s;
 }
@@ -671,6 +672,112 @@ h3{
 
 
 /*====================  Личный кабинет  ====================*/
+
+@profile_margin: 12%;
+
+
+.back{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 64px;
+	background-color: @lightgrey;
+	cursor: pointer;
+}
+.back:after{
+	content: "";
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: @blue;
+	border-radius: 50%;
+	transition: opacity .2s;
+}
+.back:active:after{
+	opacity: .7;
+}
+
+.profile{
+	max-width: 510px;
+	width: calc(100% - 64px;);
+	margin-left: auto;
+	margin-right: auto;
+}
+.profile__top{
+	padding-top: @profile_margin;
+	margin-bottom: @profile_margin;
+	text-align: center;
+}
+.profile__avatar{
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	background-color: @lightgrey;
+	overflow: hidden;
+}
+.profile__avatar img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.profile__name{
+	color: @dark;
+	font-weight: 600;
+	font-size: 16px;
+}
+.profile_edit .profile__name{
+	color: transparent;
+}
+
+.user-info{
+
+}
+.user-info:not(:last-child){
+	margin-bottom: @profile_margin;
+}
+
+.user-info__item{
+	display: flex;
+	align-items: center;
+}
+.user-info__item,
+.profile__otps li{
+	border-bottom: 1px solid @middlegrey;
+}
+.user-info__param{
+	font-weight: 600;
+}
+
+.user-info__value{
+	margin-left: auto;
+	text-align: right;
+}
+.user-info__value[onlyread]{
+	
+}
+
+.profile__otps{
+
+}
+.profile__otps li{
+}
+.profile__otps a{
+	display: block;
+	padding: 12px 0;
+}
+
+.link_red{
+	color: @red;
+}
 
 
 

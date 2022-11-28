@@ -240,7 +240,7 @@ body {
 }
 
 a {
-  color: currentColor;
+  color: #3369f3;
   background-color: #0000;
   text-decoration: none;
   transition: color .2s;
@@ -728,6 +728,103 @@ h3 {
 
 .message__empty:not(.hidden) ~ * {
   display: none;
+}
+
+.back {
+  width: 64px;
+  cursor: pointer;
+  background-color: #efefef;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.back:after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-color: #3369f3;
+  border-radius: 50%;
+  margin: auto;
+  transition: opacity .2s;
+  position: absolute;
+  inset: 0;
+}
+
+.back:active:after {
+  opacity: .7;
+}
+
+.profile {
+  max-width: 510px;
+  width: calc(100% - 64px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile__top {
+  text-align: center;
+  margin-bottom: 12%;
+  padding-top: 12%;
+}
+
+.profile__avatar {
+  width: 130px;
+  height: 130px;
+  background-color: #efefef;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.profile__avatar img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile__name {
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile_edit .profile__name {
+  color: #0000;
+}
+
+.user-info:not(:last-child) {
+  margin-bottom: 12%;
+}
+
+.user-info__item {
+  align-items: center;
+  display: flex;
+}
+
+.user-info__item, .profile__otps li {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.user-info__param {
+  font-weight: 600;
+}
+
+.user-info__value {
+  text-align: right;
+  margin-left: auto;
+}
+
+.profile__otps a {
+  padding: 12px 0;
+  display: block;
+}
+
+.link_red {
+  color: red;
 }
 
 @media screen and (min-width: 1201px) {
