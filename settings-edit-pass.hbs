@@ -23,14 +23,8 @@
 			</li>
 		</ul>
 		<ul class="user-info">
-			<li class="user-info__item">
-				<div class="user-info__param">Новый пароль</div>
-				<input class="user-info__value" type="password" value="" placeholder="•••••••••••">
-			</li>
-			<li class="user-info__item">
-				<div class="user-info__param">Повторите новый пароль</div>
-				<input class="user-info__value" type="password" value="" placeholder="•••••••••••">
-			</li>
+			{{>user_data label="Новый пароль" type="password" val="" name="password" ph="•••••••••••"}}
+			{{>user_data label="Повторите новый пароль" type="password" val="" name="password_repeat" ph="•••••••••••"}}
 		</ul>
 		<ul class="profile__otps">
 			<li><a class="but but_blue" href="settings.hbs">Сохранить</a></li>

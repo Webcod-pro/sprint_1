@@ -20,149 +20,17 @@ profile-link: "#"
         			</div>
         		</header>
     			<ul class="chat-list">
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">Андрей</div>
-    						<div class="chat-item__message">
-    							Изображение
-    						</div>
-    					</div>
-    					<div class="chat-item__time">10:49</div>
-    					<div class="chat-item__new">2</div>
-    				</li>
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">Киноклуб</div>
-    						<div class="chat-item__message chat-item__message_your">
-    							стикер
-    						</div>
-    					</div>
-    					<div class="chat-item__time">12:00</div>
-    					<div class="chat-item__new"></div>
-    				</li>
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">Илья</div>
-    						<div class="chat-item__message">
-    							Друзья, у меня для вас особенный выпуск новостей!...
-    						</div>
-    					</div>
-    					<div class="chat-item__time">15:12</div>
-    					<div class="chat-item__new">4</div>
-    				</li>
-    				<li class="chat-item active">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">Вадим</div>
-    						<div class="chat-item__message chat-item__message_your">
-    							Круто!
-    						</div>
-    					</div>
-    					<div class="chat-item__time">Пт</div>
-    					<div class="chat-item__new"></div>
-    				</li>
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">тет-а-теты</div>
-    						<div class="chat-item__message">
-    							И Human Interface Guidelines и Material Design рекомендуют...
-    						</div>
-    					</div>
-    					<div class="chat-item__time">Ср</div>
-    					<div class="chat-item__new"></div>
-    				</li>
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">1, 2, 3</div>
-    						<div class="chat-item__message">
-    							Миллионы россиян ежедневно проводят десятки часов свое...
-    						</div>
-    					</div>
-    					<div class="chat-item__time">Пн</div>
-    					<div class="chat-item__new"></div>
-    				</li>
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">Design Destroyer</div>
-    						<div class="chat-item__message">
-    							В 2008 году художник Jon Rafman  начал собирать...
-    						</div>
-    					</div>
-    					<div class="chat-item__time">Пн</div>
-    					<div class="chat-item__new"></div>
-    				</li>
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">Day.</div>
-    						<div class="chat-item__message">
-    							Так увлёкся работой по курсу, что совсем забыл его анонсир...
-    						</div>
-    					</div>
-    					<div class="chat-item__time">1 Мая 2020</div>
-    					<div class="chat-item__new"></div>
-    				</li>
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">Стас Рогозин</div>
-    						<div class="chat-item__message">
-    							Можно или сегодня или завтра вечером.
-    						</div>
-    					</div>
-    					<div class="chat-item__time">12 Апр 2020</div>
-    					<div class="chat-item__new"></div>
-    				</li>
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">Вадим</div>
-    						<div class="chat-item__message chat-item__message_your">
-    							Круто!
-    						</div>
-    					</div>
-    					<div class="chat-item__time">Пт</div>
-    					<div class="chat-item__new"></div>
-    				</li>
-    				<li class="chat-item">
-    					<div class="chat__avatar">
-    						<img src="images/blank.png" alt="">
-    					</div>
-    					<div class="chat-item__main">
-    						<div class="chat-item__name">тет-а-теты</div>
-    						<div class="chat-item__message">
-    							И Human Interface Guidelines и Material Design рекомендуют...
-    						</div>
-    					</div>
-    					<div class="chat-item__time">Ср</div>
-    					<div class="chat-item__new"></div>
-    				</li>
+                    {{>chat_item ava="images/blank.png" name="Андрей" mess="Изображение" time="10:49" new="2"}}
+                    {{>chat_item ava="images/blank.png" name="Киноклуб" mess="стикер" time="12:00"}}
+                    {{>chat_item ava="images/blank.png" name="Илья" mess="Друзья, у меня для вас особенный выпуск новостей!..." time="15:12" new="4"}}
+                    {{>chat_item ava="images/blank.png" name="Вадим" mess="Круто!" time="Пт"}}
+                    {{>chat_item ava="images/blank.png" name="тет-а-теты" mess="И Human Interface Guidelines и Material Design рекомендуют..." time="Ср"}}
+                    {{>chat_item ava="images/blank.png" name="1, 2, 3" mess="Миллионы россиян ежедневно проводят десятки часов свое..." time="Пн"}}
+                    {{>chat_item ava="images/blank.png" name="Design Destroyer" mess="В 2008 году художник Jon Rafman  начал собирать...!" time="Пн"}}
+                    {{>chat_item ava="images/blank.png" name="Day." mess="Так увлёкся работой по курсу, что совсем забыл его анонсир..." time="1 Мая 2020"}}
+                    {{>chat_item ava="images/blank.png" name="Стас Рогозин" mess="Можно или сегодня или завтра вечером." time="12 Апр 2020"}}
+                    {{>chat_item ava="images/blank.png" name="Вадим" mess="Круто!" time="10 Апр 2020"}}
+                    {{>chat_item ava="images/blank.png" name="тет-а-теты" mess="И Human Interface Guidelines и Material Design рекомендуют..." time="31 Дек 2019"}}
     			</ul>
         	</aside>
         	<section class="chat__main">
@@ -185,6 +53,8 @@ profile-link: "#"
         			</div>
         		</header>
         		<main class="message">
+
+
         			<div class="day">
         				<div class="day__date">17 июня</div>
         				<div class="message__item message__item_from">
@@ -207,7 +77,6 @@ profile-link: "#"
         				<div class="message__item message__item_to">
         					<div class="message__text">
         						<p>Привет! </p>
-        						<p></p>
 	        					<div class="message__info">
 	        						<span class="message__time">11:57</span>
 	        					</div>

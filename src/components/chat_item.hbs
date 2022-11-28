@@ -1,0 +1,15 @@
+<li class="chat-item">
+	<div class="chat__avatar">
+		<img src="{{ava}}" alt="">
+	</div>
+	<div class="chat-item__main">
+		<div class="chat-item__name">{{name}}</div>
+		<div class="chat-item__message">
+			{{mess}}
+		</div>
+	</div>
+	<div class="chat-item__time">{{time}}</div>
+	{{#if new}}
+		<div class="chat-item__new">{{new}}</div>
+	{{/if}}
+</li>
