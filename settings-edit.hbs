@@ -13,7 +13,10 @@
 			<div class="profile__avatar">
 				<img src="images/blank.png" alt="">
 			</div>
-			<div class="profile__name">Иван</div>
+			<div>
+				<a href="#">Изменить аватарку</a>
+				<input type="text" class="hidden" value="Путь к новой картинке" placeholder="Путь к новой картинке" name="avatar">
+			</div>
 		</div>
 		<ul class="user-info">
 			{{>user_data label="Почта" type="email" val="pochta@yandex.ru" name="email"}}

@@ -4,27 +4,43 @@
     <head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Авторизация</title>
+		<title>Заглавие</title>
     	<link rel="stylesheet" href="css/style.less" />
     </head>
     <body> 
-        <div class="popup-wrapper">
-	        <div class="popup" id="pp_enter">
-
-
-	        	<div class="popup__container">
-	        		<div class="popup__title">Вход</div>
-	        		<form class="pp-form">
-	        			{{>field type="text" ph="Логин" name="login"}}
-	        			{{>field type="password" ph="Пароль" name="password"}}
-	        			<div class="pp-form__footer">
-		        			<a class="but but_blue" href="chat.hbs">Авторизоваться</a-->
-		        			<!--button type="button" id="but-login" class="but but_blue">Авторизоваться</button-->
-		        			<a href="registration.hbs" class="pp-link">Нет аккаунта?</a>
-	        			</div>
-	        		</form>
-	        	</div>
-	        </div>
+    	<div class="container">
+		        <nav>
+		        	<ol>
+		        		<li><a href="autorization.hbs" target="_blank">Вход</a></li>
+		        		<li><a href="registration.hbs" target="_blank">Регистрация</a></li>
+		        		<li><a href="chat.hbs" target="_blank">Чат</a></li>
+		        		<li><a href="page404.hbs" target="_blank">Страница 404</a></li>
+		        		<li><a href="page_fatal.hbs" target="_blank">Страница 5**</a></li>
+		        		<li><a href="settings.hbs" target="_blank">Настройки аккаунта</a></li>
+		        		<li><a href="settings-edit.hbs" target="_blank">Настройки аккаунта - редактирование</a></li>
+		        		<li><a href="settings-edit-pass.hbs" target="_blank">Настройки аккаунта - изменение пароля</a></li>
+		        	</ol>
+		        </nav>
 	    </div>
+        <style>
+        	.container{
+        		padding-top: 10%;
+        	}
+	        nav{
+	        	font-size: 130%;
+	        }
+	        ul{
+
+	        }
+	        li{
+	        	margin-bottom: 16px;
+	        }
+	        a{
+
+	        }
+	        a:visited{
+	        	color: #00008b;
+	        }
+        </style>
     </body>
 </html> 
