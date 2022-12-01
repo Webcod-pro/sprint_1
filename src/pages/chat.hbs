@@ -1,12 +1,9 @@
----
-profile-link: "#"
----
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Чат</title>
-    	<link rel="stylesheet" href="css/style.less" />
+    	<link rel="stylesheet" href="/css/style.less" />
     </head>
     <body>
         <div class="chat">
@@ -20,26 +17,26 @@ profile-link: "#"
         			</div>
         		</header>
     			<ul class="chat-list">
-                    {{>chat_item ava="images/blank.png" name="Андрей" mess="Изображение" time="10:49" new="2"}}
-                    {{>chat_item ava="images/blank.png" name="Киноклуб" mess="стикер" time="12:00"}}
-                    {{>chat_item ava="images/blank.png" name="Илья" mess="Друзья, у меня для вас особенный выпуск новостей!..." time="15:12" new="4"}}
-                    {{>chat_item ava="images/blank.png" name="Вадим" mess="Круто!" time="Пт"}}
-                    {{>chat_item ava="images/blank.png" name="тет-а-теты" mess="И Human Interface Guidelines и Material Design рекомендуют..." time="Ср"}}
-                    {{>chat_item ava="images/blank.png" name="1, 2, 3" mess="Миллионы россиян ежедневно проводят десятки часов свое..." time="Пн"}}
-                    {{>chat_item ava="images/blank.png" name="Design Destroyer" mess="В 2008 году художник Jon Rafman  начал собирать...!" time="Пн"}}
-                    {{>chat_item ava="images/blank.png" name="Day." mess="Так увлёкся работой по курсу, что совсем забыл его анонсир..." time="1 Мая 2020"}}
-                    {{>chat_item ava="images/blank.png" name="Стас Рогозин" mess="Можно или сегодня или завтра вечером." time="12 Апр 2020"}}
-                    {{>chat_item ava="images/blank.png" name="Вадим" mess="Круто!" time="10 Апр 2020"}}
-                    {{>chat_item ava="images/blank.png" name="тет-а-теты" mess="И Human Interface Guidelines и Material Design рекомендуют..." time="31 Дек 2019"}}
+                    {{>chat_item ava="/images/blank.png" name="Андрей" mess="Изображение" time="10:49" new="2"}}
+                    {{>chat_item ava="/images/blank.png" name="Киноклуб" mess="стикер" time="12:00"}}
+                    {{>chat_item ava="/images/blank.png" name="Илья" mess="Друзья, у меня для вас особенный выпуск новостей!..." time="15:12" new="4"}}
+                    {{>chat_item ava="/images/blank.png" name="Вадим" mess="Круто!" time="Пт"}}
+                    {{>chat_item ava="/images/blank.png" name="тет-а-теты" mess="И Human Interface Guidelines и Material Design рекомендуют..." time="Ср"}}
+                    {{>chat_item ava="/images/blank.png" name="1, 2, 3" mess="Миллионы россиян ежедневно проводят десятки часов свое..." time="Пн"}}
+                    {{>chat_item ava="/images/blank.png" name="Design Destroyer" mess="В 2008 году художник Jon Rafman  начал собирать...!" time="Пн"}}
+                    {{>chat_item ava="/images/blank.png" name="Day." mess="Так увлёкся работой по курсу, что совсем забыл его анонсир..." time="1 Мая 2020"}}
+                    {{>chat_item ava="/images/blank.png" name="Стас Рогозин" mess="Можно или сегодня или завтра вечером." time="12 Апр 2020"}}
+                    {{>chat_item ava="/images/blank.png" name="Вадим" mess="Круто!" time="10 Апр 2020"}}
+                    {{>chat_item ava="/images/blank.png" name="тет-а-теты" mess="И Human Interface Guidelines и Material Design рекомендуют..." time="31 Дек 2019"}}
     			</ul>
         	</aside>
         	<section class="chat__main">
                 <div class="message__empty hidden">Выберите чат чтобы отправить сообщение</div>
         		<header class="header">
         			<div class="chat__profile">
-        				<a href="{{profile-link}}">
+        				<a href="#">
 	        				<div class="chat__avatar chat__avatar_small">
-	    						<img src="images/blank.png" alt="">
+	    						<img src="/images/blank.png" alt="Аватар пользователя" alt="">
 	        				</div>
 	        				<span>Вадим</span>
         				</a>
@@ -67,7 +64,7 @@ profile-link: "#"
         					</div>
         					<div class="message__pict">
         						<div class="message__img">
-        							<img src="images/tmp/img1.png" alt="">
+        							<img src="/images/tmp/img1.png" alt="Камера">
         						</div>
 	        					<div class="message__info">
 	        						<span class="message__time">11:58</span>
@@ -95,10 +92,10 @@ profile-link: "#"
         					</div>
         					<div class="message__pict">
         						<div class="message__img">
-        							<img src="images/tmp/img1.png" alt="">
+        							<img src="/images/tmp/img1.png" alt="Камера">
         						</div>
         						<div class="message__img">
-        							<img src="images/tmp/img1.png" alt="">
+        							<img src="/images/tmp/img1.png" alt="Камера">
         						</div>
 	        					<div class="message__info">
 	        						<span class="message__time">11:56</span>
@@ -117,7 +114,7 @@ profile-link: "#"
         				<div class="message__item message__item_to">
         					<div class="message__pict">
         						<div class="message__img">
-        							<img src="images/tmp/img1.png" alt="">
+        							<img src="/images/tmp/img1.png" alt="Камера">
         						</div>
 	        					<div class="message__info">
 	        						<span class="message__time">11:58</span>

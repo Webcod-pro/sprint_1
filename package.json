@@ -18,5 +18,8 @@
     "punycode": "^1.4.1",
     "string_decoder": "^1.3.0"
   },
-  "engine": "18.12.1"
+  "engine": "18.12.1",
+  "engines": { 
+    "node" : ">=12" 
+  }
 }
