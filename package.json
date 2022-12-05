@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "parcel index.hbs",
     "start": "node server.js",
-    "build": "parcel build index.hbs"
+    "build": "parcel build index.hbs",
+    "ts": "ts-node typescript.ts"
   },
   "keywords": [],
   "author": "",
