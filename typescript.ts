@@ -1,3 +1,16 @@
+type Settings = {
+	color: string;
+	delay: number;
+	retry: boolean;
+};
+
+const settings: Settings = {
+	color: "#f00",
+	delay: 2000,
+	retry: false,
+};
+
+
 let object: {
 	num: number;
 	str: string;
@@ -8,8 +21,8 @@ let object: {
 } = {
 	num: 123,
 	str: "string",
-	arrNum: [1, 2, 3],
 	arrStr: ["1", "2", "3"],
+	arrNum: [1, 2, 3],
 	bool: true,
 	tuple: [4, "str"],
 }
@@ -30,21 +43,18 @@ const price: {
 	name: "Товар 1"
 }
 
-let cancelTimeoutCb: () => void;
 
-cancelTimeoutCb = () => {
-	console.log(123);
-	return 1456;
-};
+abstract class Snake {
+	private readonly _length: number;
 
+	public get length(): number {
+		return this._length/100;
+	};
 
-function hof(cb: () => number): void {
-  cb();
+	constructor(length: number) {
+		this._length = length;
+	};
+
+	protected abstract makeSound(): void;
+
 }
-
-function func(): string {
-	console.log('this is not void');
-  	return 'this is not void';
-}
-
-hof(func); // тут не будет ошибки
